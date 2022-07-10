@@ -1,3 +1,0 @@
-0th layer: 784 input nodes (pixels)
-1st layer: 10 nodes
-2nd layer: 10 output nodes
