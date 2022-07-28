@@ -13,14 +13,6 @@ def softmax(Z):
     softmax = np.exp(Z) / sum(np.exp(Z))
     return softmax
 
-# def one_hot(Y):
-#     one_hot_Y = np.zeros((Y.size, 10))
-
-#     # Find the entry for the current example (in Y), then the index of the current answer Y and set it to 1
-#     one_hot_Y[np.arange(Y.size), Y] = 1
-#     one_hot_Y = one_hot_Y.T
-#     return one_hot_Y
-
 def encode_Y(Y):
     # Y.size refers to the amount of examples, 10 is all the possible answers 0-9
     # np.zeros creates a matrix of these dimensions with 0 in every entry
