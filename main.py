@@ -7,8 +7,10 @@ data = np.array(csv)
 m, n = data.shape
 np.random.shuffle(data)
 
+print(m)
+
 #Transposes matrix, now first element is the column vector of the labels
-data_train = data[1000:m].T
+data_train = data[0:m].T
 
 Y_train = data_train[0] # Labels
 X_train = data_train[1:n] # Images
@@ -89,4 +91,4 @@ def gradient_descent(X, Y, alpha, iterations):
     return W1, b1, W2, b2
 
 if __name__ == "__main__":
-    W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.25, 1000)
+    W1, b1, W2, b2 = gradient_descent(X_train, Y_train, 0.25, 10000)
