@@ -1,4 +1,4 @@
-# ml1
+# MNIST Digits NN
 
 This network is designed to predict handrawn numbers from the MNIST handwritten digits database. Specifically, it uses the csv version found on Kaggle at: 
 https://www.kaggle.com/datasets/oddrationale/mnist-in-csv. The current version in this repository training on the given number of iterations and learning rate achieves
